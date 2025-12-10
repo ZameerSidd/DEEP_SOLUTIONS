@@ -5,14 +5,34 @@
   --gold: #C9A24A;
   --light-gray: #F5F5F5;
   
-  /* Spacing Variables */
-  --section-padding-desktop: 120px;
-  --section-padding-tablet: 80px;
-  --section-padding-mobile: 50px;
+  /* Strict Spacing System (8px base unit) */
+  --space-1: 8px;    /* 8px */
+  --space-2: 16px;   /* 16px */
+  --space-3: 24px;   /* 24px */
+  --space-4: 32px;   /* 32px */
+  --space-5: 40px;   /* 40px */
+  --space-6: 48px;   /* 48px */
+  --space-8: 64px;   /* 64px */
+  --space-10: 80px;  /* 80px */
+  --space-12: 96px;  /* 96px */
+  --space-15: 120px; /* 120px */
+  --space-20: 160px; /* 160px */
   
+  /* Section Spacing */
+  --section-padding-y-desktop: 120px;
+  --section-padding-y-tablet: 80px;
+  --section-padding-y-mobile: 64px;
+  
+  /* Container Padding */
   --container-padding-desktop: 80px;
   --container-padding-tablet: 40px;
   --container-padding-mobile: 24px;
+  
+  /* Component Spacing */
+  --card-padding-desktop: 48px;
+  --card-padding-mobile: 32px;
+  --card-gap: 32px;
+  --grid-gap: 32px;
 }
 
 * {

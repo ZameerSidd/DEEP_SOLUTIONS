@@ -39,14 +39,19 @@ export function Footer({ logo }: FooterProps) {
 
   return (
     <footer id="contact" className="bg-[#0A1A33] text-white">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-20 pt-16 md:pt-20 lg:pt-24 pb-10 md:pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-16">
+      {/* Main footer content - 120px top padding desktop, 80px tablet, 48px mobile */}
+      <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-20 pt-12 md:pt-20 lg:pt-[120px] pb-12 md:pb-16 lg:pb-20">
+        {/* Footer grid - 32px gap, 64px bottom margin */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-12 mb-16 md:mb-20 lg:mb-24">
           {/* Company Info */}
           <div>
-            <img src={'./src/assets/logo.png'} alt="Deep Solutions" className="h-14 mb-8 brightness-0 invert" />
-            <p className="text-gray-400 mb-8 leading-relaxed">
+            {/* Logo with 24px gap */}
+            <img src={logo} alt="Deep Solutions" className="h-14 mb-6 md:mb-8" />
+            {/* Description with 24px gap */}
+            <p className="text-gray-400 mb-6 md:mb-8 leading-relaxed">
               Delivering world-class industrial maintenance, fabrication, and advanced NDT inspection services.
             </p>
+            {/* Social links with 16px gap */}
             <div className="flex gap-4">
               <motion.a
                 whileHover={{ scale: 1.2, y: -2 }}
@@ -74,8 +79,10 @@ export function Footer({ logo }: FooterProps) {
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-8 text-[#C9A24A]">Quick Links</h4>
-            <ul className="space-y-4">
+            {/* Title with 24px gap */}
+            <h4 className="mb-6 md:mb-8 text-[#C9A24A]">Quick Links</h4>
+            {/* List with 16px gap */}
+            <ul className="space-y-4 md:space-y-5">
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <motion.a
@@ -93,7 +100,9 @@ export function Footer({ logo }: FooterProps) {
 
           {/* Services */}
           <div>
-            <h4 className="mb-8 text-[#C9A24A]">Services</h4>
+            {/* Title with 24px gap */}
+            <h4 className="mb-6 text-[#C9A24A]">Services</h4>
+            {/* List with 16px gap */}
             <ul className="space-y-4">
               {services.map((service) => (
                 <li key={service.name}>
@@ -112,28 +121,36 @@ export function Footer({ logo }: FooterProps) {
 
           {/* Contact Information */}
           <div>
-            <h4 className="mb-8 text-[#C9A24A]">Contact Information</h4>
-            <div className="space-y-5">
-              <div className="flex items-start gap-4">
+            {/* Title with 24px gap */}
+            <h4 className="mb-6 text-[#C9A24A]">Contact Information</h4>
+            {/* Contact items with 16px gap */}
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
                 <MapPin className="text-[#C9A24A] flex-shrink-0 mt-1" size={20} />
-                <p className="text-gray-400 leading-relaxed">Kingdom of Saudi Arabia</p>
+                <p className="text-gray-400 leading-relaxed text-sm">
+                  Deep Solutions Establishment for General Contracting<br />
+                  NBC Compound - King Faisal West Road, Aramco (Berry) Road<br />
+                  PO Box: 1721, Jubail, KSA - 31951
+                </p>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3">
                 <Phone className="text-[#C9A24A] flex-shrink-0 mt-1" size={20} />
-                <p className="text-gray-400">+966 XX XXX XXXX</p>
+                <p className="text-gray-400">+966 59 614 4587</p>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3">
                 <Mail className="text-[#C9A24A] flex-shrink-0 mt-1" size={20} />
-                <p className="text-gray-400">info@deepsolutions.sa</p>
+                <p className="text-gray-400">info@deepsecc.com</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
+        {/* Bottom Bar - 40px top padding */}
         <div className="border-t border-white/10 pt-10">
+          {/* Flex container with 24px gap */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-6">
+              {/* Badge with proper padding */}
               <div className="h-12 px-8 bg-white/10 rounded-xl flex items-center justify-center">
                 <span className="text-[#C9A24A]">Saudi Vision 2030</span>
               </div>

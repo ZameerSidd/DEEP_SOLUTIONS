@@ -18,32 +18,34 @@ interface IndustriesProps {
 
 export function Industries({ industriesImage }: IndustriesProps) {
   return (
-    <section className="py-20 md:py-28 lg:py-32 bg-[#F5F5F5]">
+    <section className="py-12 md:py-20 lg:py-[100px] bg-[#F5F5F5]">
       <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-20">
-        {/* Section Title */}
+        {/* Section Title - 64px bottom margin */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16 lg:mb-20"
+          className="text-center mb-16"
         >
-          <h2 className="text-[#0A1A33] mb-6">
+          {/* Title with 16px gap */}
+          <h2 className="text-[#0A1A33] mb-4">
             Industry <span className="text-[#C9A24A]">Applications</span>
           </h2>
-          <div className="w-20 h-1 bg-[#C9A24A] mx-auto mb-8" />
+          {/* Divider with 16px gap */}
+          <div className="w-20 h-1 bg-[#C9A24A] mx-auto mb-4 md:mb-6 lg:mb-8" />
           <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
             Serving diverse industrial sectors with specialized expertise and precision
           </p>
         </motion.div>
 
-        {/* Industry Image Banner */}
+        {/* Industry Image Banner - 40px gap to cards */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative rounded-3xl overflow-hidden mb-12 lg:mb-16 h-[300px] md:h-[400px] shadow-2xl"
+          className="relative rounded-3xl overflow-hidden mb-12 md:mb-16 lg:mb-20 h-[300px] md:h-[400px] shadow-2xl"
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
@@ -51,8 +53,10 @@ export function Industries({ industriesImage }: IndustriesProps) {
           >
             <div className="absolute inset-0 bg-gradient-to-t from-[#0A1A33]/80 via-[#0A1A33]/40 to-transparent" />
           </div>
-          <div className="relative h-full flex items-end px-8 md:px-12 lg:px-16 pb-12">
+          {/* Content padding */}
+          <div className="relative h-full flex items-end px-6 md:px-10 lg:px-16 pb-8 md:pb-12 lg:pb-16">
             <div>
+              {/* Title with 12px gap */}
               <h3 className="text-white mb-3">Trusted Across Critical Industries</h3>
               <p className="text-gray-200 text-lg max-w-2xl">
                 Delivering excellence in Saudi Arabia&apos;s most demanding sectors
@@ -61,8 +65,8 @@ export function Industries({ industriesImage }: IndustriesProps) {
           </div>
         </motion.div>
 
-        {/* Industries Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        {/* Industries Grid - 32px gap between tiles, 24px internal padding */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
           {industries.map((industry, index) => (
             <motion.div
               key={industry.title}
@@ -73,11 +77,13 @@ export function Industries({ industriesImage }: IndustriesProps) {
               whileHover={{ scale: 1.05, y: -5 }}
               className="group"
             >
-              <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center border-2 border-transparent hover:border-[#C9A24A]">
+              {/* Card with 24px internal padding */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center border-2 border-transparent hover:border-[#C9A24A]">
+                {/* Icon with 24px gap to title */}
                 <motion.div
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
-                  className={`w-14 h-14 bg-gradient-to-br ${industry.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}
+                  className={`w-14 h-14 bg-gradient-to-br ${industry.color} rounded-2xl flex items-center justify-center mb-6 md:mb-8 shadow-lg`}
                 >
                   <industry.icon className="text-white" size={28} />
                 </motion.div>

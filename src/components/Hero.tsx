@@ -39,14 +39,14 @@ export function Hero({ backgroundImage }: HeroProps) {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-10 lg:px-20 py-32 lg:py-40 text-center lg:text-left">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-10 lg:px-20 py-12 md:py-20 lg:py-[120px] text-center lg:text-left">
         <div className="max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <h1 className="text-white mb-6">
+            <h1 className="text-white mb-4 md:mb-6 lg:mb-8">
               Depth in Service. <br />
               <span className="text-[#C9A24A]">Strength in Delivery.</span>
             </h1>
@@ -56,7 +56,7 @@ export function Hero({ backgroundImage }: HeroProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-gray-200 text-lg lg:text-xl mb-10 max-w-2xl leading-relaxed"
+            className="text-gray-200 text-lg lg:text-xl mb-8 md:mb-10 lg:mb-12 max-w-2xl leading-relaxed"
           >
             High-quality fabrication, machining, welding, and advanced NDT inspection services.
           </motion.p>

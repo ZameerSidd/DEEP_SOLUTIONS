@@ -21,9 +21,10 @@ const cards = [
 
 export function VisionMissionValues() {
   return (
-    <section className="py-20 md:py-28 lg:py-32 bg-[#F5F5F5]">
+    <section className="py-12 md:py-20 lg:py-[120px] bg-[#F5F5F5]">
       <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Grid with 40px gap between cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
           {cards.map((card, index) => (
             <motion.div
               key={card.title}
@@ -32,16 +33,18 @@ export function VisionMissionValues() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="bg-white rounded-3xl p-10 lg:p-12 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+              className="bg-white rounded-3xl p-8 md:p-10 lg:p-12 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
             >
+              {/* Icon with 16px gap to title */}
               <motion.div
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.6 }}
-                className="w-14 h-14 bg-gradient-to-br from-[#C9A24A] to-[#B8923D] rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+                className="w-14 h-14 bg-gradient-to-br from-[#C9A24A] to-[#B8923D] rounded-2xl flex items-center justify-center mb-4 shadow-lg"
               >
                 <card.icon className="text-white" size={28} />
               </motion.div>
-              <h3 className="text-[#0A1A33] mb-6">{card.title}</h3>
+              {/* Title with 16px gap to paragraph */}
+              <h3 className="text-[#0A1A33] mb-4">{card.title}</h3>
               <p className="text-gray-600 leading-relaxed">{card.description}</p>
             </motion.div>
           ))}

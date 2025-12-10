@@ -51,8 +51,9 @@ export function Header({ logo }: HeaderProps) {
         isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'
       }`}
     >
+      {/* Navigation with proper horizontal padding */}
       <nav className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-20">
-        <div className="flex items-center justify-between h-20 lg:h-24">
+        <div className="flex items-center justify-between py-4 md:py-5 lg:py-6">
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -64,8 +65,8 @@ export function Header({ logo }: HeaderProps) {
             </a>
           </motion.div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8 xl:gap-10">
+          {/* Desktop Navigation - 16px gap between menu items */}
+          <div className="hidden lg:flex items-center gap-6">
             {navItems.map((item, index) => (
               <motion.a
                 key={item.name}
@@ -75,7 +76,7 @@ export function Header({ logo }: HeaderProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 whileHover={{ y: -2 }}
-                className="relative text-[#0A1A33] hover:text-[#C9A24A] transition-colors duration-300 group cursor-pointer"
+                className="relative text-[#0A1A33] hover:text-[#C9A24A] transition-colors duration-300 group cursor-pointer px-2"
               >
                 {item.name}
                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#C9A24A] transition-all duration-300 group-hover:w-full" />
@@ -83,10 +84,10 @@ export function Header({ logo }: HeaderProps) {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button with proper padding */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 rounded-md text-[#0A1A33] hover:bg-gray-100 transition-colors"
+            className="lg:hidden p-3 rounded-md text-[#0A1A33] hover:bg-gray-100 transition-colors"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -102,7 +103,8 @@ export function Header({ logo }: HeaderProps) {
               transition={{ duration: 0.3 }}
               className="lg:hidden overflow-hidden"
             >
-              <div className="py-6 space-y-1">
+              {/* Mobile menu with proper padding */}
+              <div className="py-4 space-y-2">
                 {navItems.map((item, index) => (
                   <motion.a
                     key={item.name}

@@ -5,6 +5,7 @@
 
   export default defineConfig({
     base: process.env.VITE_BASE_URL || '/DEEP_SOLUTIONS/',
+    // base: '/',
     build: {
       outDir: 'build'
     },

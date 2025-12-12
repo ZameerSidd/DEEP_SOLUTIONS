@@ -19,7 +19,7 @@ const getAssetPath = (path: string) => {
 // Carousel Hero Images
 export const allImages = {
   logo: getAssetPath("/images/logo.png"),
-  logoSrc: '/images/logo.png',
+  logo_Src: '/images/logo.png',
 
   new_bg: getAssetPath("/images/new_bg.jpeg"),
   new_bg_src: "/images/new_bg.jpeg",

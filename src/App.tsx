@@ -25,7 +25,7 @@ export default function App() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <img src={allImages.logoSrc} alt="Deep Solutions" className="h-12" />
+              <img src={allImages.logo_Src} alt="Deep Solutions" className="h-12" />
             </div>
 
             {/* Desktop Menu */}
@@ -378,7 +378,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="md:col-span-2">
-              <img src={allImages.logoSrc} alt="Deep Solutions" className="h-12 mb-4" />
+              <img src={allImages.logo_Src} alt="Deep Solutions" className="h-12 mb-4" />
               <p className="text-gray-400 leading-relaxed max-w-md">
                 Depth in Service. Strength in Delivery. Your trusted partner for industrial maintenance, inspection, and testing solutions.
               </p>

@@ -4,11 +4,8 @@
   import path from 'path';
 
   export default defineConfig({
-    base: process.env.VITE_BASE_URL || '/DEEP_SOLUTIONS/',
-    // base: '/',
-    build: {
-      outDir: 'build'
-    },
+    // base: process.env.VITE_BASE_URL || '/DEEP_SOLUTIONS/',
+    base: '/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -54,10 +51,10 @@
         '@': path.resolve(__dirname, './src'),
       },
     },
-    // build: {
-    //   target: 'esnext',
-    //   outDir: 'build',
-    // },
+    build: {
+      target: 'esnext',
+      outDir: 'build',
+    },
     server: {
       port: 3000,
       open: true,

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import {allImages} from './assets/img';
 import { Menu, X, Factory, Shield, Zap, Award, CheckCircle2, Phone, Mail, MapPin } from 'lucide-react';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
-
+//Change has been made.
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);

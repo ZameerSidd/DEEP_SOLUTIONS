@@ -66,7 +66,7 @@ export default function App() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <ImageWithFallback 
-            src={allImages.new_bg}
+            src={allImages.new_bg_src}
             alt="Industrial Background" 
             className="w-full h-full object-cover opacity-1"
           />
@@ -221,7 +221,7 @@ export default function App() {
             </div>
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <ImageWithFallback 
-                src={allImages.new_bg}
+                src={allImages.new_bg_src}
                 alt="Fabrication and Machining" 
                 className="w-full h-[400px] object-cover"
               />
@@ -236,7 +236,7 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-3xl overflow-hidden shadow-2xl order-2 md:order-1">
               <ImageWithFallback 
-                src={allImages.NonDestructiveTesting}
+                src={allImages.NonDestructiveTesting_src}
                 alt='Non-Destructive-Testing' 
                 className="w-full h-[400px] object-cover"
               />
@@ -329,7 +329,7 @@ export default function App() {
             </div>
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <ImageWithFallback 
-                src={allImages.IndustryApplications}
+                src={allImages.IndustryApplications_src}
                 alt="Industry Applications" 
                 className="w-full h-[400px] object-cover"
               />

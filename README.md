@@ -1,3 +1,4 @@
+## Project Architecture
 ```
 deep-dive-solutions-main
 ├─ bun.lockb
@@ -15,6 +16,7 @@ deep-dive-solutions-main
 │  │  ├─ ferrite-testing.jpg
 │  │  ├─ hardness-testing.jpg
 │  │  ├─ holiday-testing.jpg
+│  │  ├─ logo.png
 │  │  ├─ mfl-tank-pipe.jpg
 │  │  ├─ mpt-testing.jpg
 │  │  ├─ oxide-testing.jpg
@@ -103,6 +105,7 @@ deep-dive-solutions-main
 │  │  └─ advancedNdtMethods.ts
 │  ├─ hooks
 │  │  ├─ use-mobile.tsx
+│  │  ├─ use-scroll-to-hash.ts
 │  │  └─ use-toast.ts
 │  ├─ index.css
 │  ├─ lib
@@ -111,8 +114,11 @@ deep-dive-solutions-main
 │  ├─ pages
 │  │  ├─ AdvancedNDT.tsx
 │  │  ├─ ConventionalNDT.tsx
+│  │  ├─ DrillingOCTG.tsx
 │  │  ├─ Index.tsx
-│  │  └─ NotFound.tsx
+│  │  ├─ NotFound.tsx
+│  │  ├─ PlantInspection.tsx
+│  │  └─ ThirdPartyMonitoring.tsx
 │  ├─ test
 │  │  ├─ example.test.ts
 │  │  └─ setup.ts

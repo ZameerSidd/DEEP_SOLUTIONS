@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import ConventionalNDT from "./pages/ConventionalNDT";
 import AdvancedNDT from "./pages/AdvancedNDT";
+import DrillingOCTG from "./pages/DrillingOCTG";
+import PlantInspection from "./pages/PlantInspection";
+import ThirdPartyMonitoring from "./pages/ThirdPartyMonitoring";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +23,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/conventional-ndt" element={<ConventionalNDT />} />
           <Route path="/advanced-ndt" element={<AdvancedNDT />} />
+          <Route path="/drilling-octg" element={<DrillingOCTG />} />
+          <Route path="/plant-inspection" element={<PlantInspection />} />
+          <Route path="/third-party-monitoring" element={<ThirdPartyMonitoring />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

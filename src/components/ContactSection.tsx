@@ -33,14 +33,14 @@ const ContactSection = () => {
           </a>
 
           <a
-            href="https://maps.google.com/?q=26.3927,49.9777"
+            href="https://maps.google.com/?q=27.0046,49.6585"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-3 p-8 rounded-xl bg-white/10 border border-white/20 hover:border-primary/50 transition-colors"
           >
             <MapPin className="w-8 h-8 text-primary" />
             <span className="font-semibold text-light">Location</span>
-            <span className="text-sm text-steel">Dammam, Saudi Arabia</span>
+            <span className="text-sm text-steel">Jubail, Saudi Arabia</span>
           </a>
         </div>
       </div>
